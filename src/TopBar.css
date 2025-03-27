@@ -1,0 +1,78 @@
+.topbar {
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+.topbar-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px; /* increased from 24px */
+  font-weight: bold;
+  color: #333;
+  flex: 1 1 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+.nav-links {
+  flex: 2 1 400px;
+  text-align: center;
+}
+
+.nav-links a {
+  margin: 0 18px;
+  font-size: 18px; /* increased from 14-16px */
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  transform: scale(1.1);
+  color: #007BFF;
+}
+
+.auth-buttons {
+  flex: 1 1 200px;
+  text-align: right;
+}
+
+.auth-buttons button {
+  font-size: 16px; /* increased from 14px */
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #007BFF;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.auth-buttons button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
