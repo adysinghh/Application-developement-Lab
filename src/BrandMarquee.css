@@ -1,0 +1,43 @@
+.brand-marquee-wrapper {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  .brand-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 25s linear infinite;
+  }
+  
+  .brand-logo {
+    flex: 0 0 auto;
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .brand-logo img {
+    height: 100px;
+    width: auto;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+  }
+  
+  .brand-logo img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Marquee Animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
