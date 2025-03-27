@@ -1,0 +1,52 @@
+.idea-input {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .idea-input h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .idea-input form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .idea-textarea {
+    width: 100%;
+    min-height: 200px; /* Increased height for a larger text area */
+    padding: 20px; /* Increased padding for better spacing */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.2rem; /* Bigger font size for improved readability */
+    resize: vertical;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .idea-textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.4);
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+    padding: 16px 32px; /* Increased padding for a larger button */
+    font-size: 1.25rem; /* Bigger font size for the button text */
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #007BFF, #0056b3);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(45deg, #0056b3, #003f7f);
+    transform: scale(1.05);
+  }
+  
